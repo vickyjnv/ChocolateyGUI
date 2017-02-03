@@ -1,8 +1,0 @@
-title: Chocolatey-explorer
-description: Explorer for chocolatey, requires the install of chocolatey
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-cayman
-
-gems:
-  - jekyll-mentions

@@ -1,0 +1,288 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
+        <title>Docs - API - IPackageViewModel.Version Property</title>
+        <link href="/ChocolateyGUI/assets/css/mermaid.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/highlight.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/ChocolateyGUI/assets/css/override.css" rel="stylesheet">
+        <script src="/ChocolateyGUI/assets/js/jQuery-2.2.3.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/bootstrap.min.js"></script>        
+        <script src="/ChocolateyGUI/assets/js/app.min.js"></script>         
+        <script src="/ChocolateyGUI/assets/js/highlight.pack.js"></script>   
+        <script src="/ChocolateyGUI/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/mermaid.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/ChocolateyGUI/assets/js/html5shiv.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/ChocolateyGUI/" class="logo">
+                            <span>Docs</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/ChocolateyGUI/about">About This Project</a></li>
+        <li><a href="/ChocolateyGUI/credits">Credits</a></li>
+        <li><a href="/ChocolateyGUI/docs">Docs</a></li>
+        <li><a href="/ChocolateyGUI/blog">Blog</a></li>
+        <li class="active"><a href="/ChocolateyGUI/api">API</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Value">Value</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">                    
+                    	
+	    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+			<li class="header">Namespace</li>
+		<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items">ChocolateyGui<wbr>.ViewModels<wbr>.Items</a></li>
+		<li class="header">Type</li>
+		<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Property Members</li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/2E509CAA">Authors</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/34761372">CanUpdate</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/78CCF620">Copyright</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/3D1EF499">Dependencies</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/A1739C4A">Description</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/A368DFC7">DownloadCount</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/67BA9A39">GalleryDetailsUrl</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/336B53DA">IconUrl</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/F06BEE57">Id</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/C4F08FF8">Is<wbr>Absolute<wbr>Latest<wbr>Version</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/58884146">IsInstalled</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/02E7D280">IsLatestVersion</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/EA13D1E4">IsPinned</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/13D57426">IsPrerelease</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/628D4514">Language</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/BCF61496">LatestVersion</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/447B0796">LicenseUrl</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/094BAB66">Owners</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/4E2CBB5D">PackageHash</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/E5E11F3D">PackageHashAlgorithm</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/9C6AC37B">PackageSize</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/93F465C6">ProjectUrl</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/9CB94B70">Published</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/3427F3A3">ReleaseNotes</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/B7963D1C">ReportAbuseUrl</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/0C448A40">Require<wbr>License<wbr>Acceptance</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/80A6537B">Source</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/1C1CB8EA">Summary</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/338C0DC8">Tags</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/982D4C46">Title</a></li>
+				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/BCA98C9B">Version</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/B840F523">VersionDownloadCount</a></li>
+			<li class="header">Method Members</li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/756A0DFD">Install<wbr>()<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/0698F89F">Uninstall<wbr>()<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/5EC47752">Update<wbr>()<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel/90D902EE">ViewDetails<wbr>()<wbr></a></li>
+
+
+                    </ul>
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+			<h3><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a>.</h3>
+	<h1>Version <small>Property</small></h1>
+</section>
+<section class="content">
+	
+	
+	
+		<div class="panel panel-default">
+  			<div class="panel-body">
+				<dl class="dl-horizontal">	
+						
+						<dt>Namespace</dt>
+						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items">ChocolateyGui<wbr>.ViewModels<wbr>.Items</a></dd>
+					
+						<dt>Containing Type</dt>
+						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a></dd>		
+					
+				</dl>
+  			</div>
+		</div>
+
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>SemanticVersion Version { get; set; }</code></pre>
+
+
+
+
+
+	<h1 id="Value">Value</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+					<td>SemanticVersion</td>
+					<td></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).load(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        htmlLabels: false,
+                        useMaxWidth:false
+                    }
+                });  
+                mermaid.init(undefined, ".mermaid")
+                $('svg').addClass('img-responsive');
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
