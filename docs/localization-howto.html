@@ -104,14 +104,13 @@
 	</section>
 	<section class="content">
 		<h2 id="basics">Basics</h2>
-<p>To enable using localized strings in ChocolateyGUI UI, the UI loads all its strings from a set of resource files called <code>resx</code> files.
-These <code>resx</code> files allows defining language and culture specific strings and resources, while have english fallbacks when they aren't present.
-This allows to ChocolateyGUI to, in general, be localization neutral.
+<p>To enable using localized strings in the ChocolateyGUI UI, the UI loads all its strings from a set of resource files called <code>resx</code> files.
+These <code>resx</code> files allows defining language and culture specific strings and resources, while having english fallbacks when they aren't present.
+This allows ChocolateyGUI to, in general, be localization neutral.
 For more information about localizaton using <code>resx</code> check the CultureInfo section on <a href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.110).aspx">MSDN</a>.</p>
-<p>The most important thing to remember is: each language has it's own <code>Resources.&lt;lang&gt;.resx</code>, where <code>&lt;lang&gt;</code> is referring to the language culture name.
-(as example <code>de</code> for German or <code>nl</code> for Dutch)
+<p>The most important thing to remember is: each language has it's own <code>Resources.&lt;lang&gt;.resx</code>, where <code>&lt;lang&gt;</code> is referring to the language culture name (as an example <code>de</code> for German or <code>nl</code> for Dutch).
 A list of available cultures and their corresponding codes tags can be found <a href="https://msdn.microsoft.com/en-us/library/cc233982.aspx">here</a>.
-If no fitting <code>&lt;lang&gt;</code> is present for the current system, the default/fallback <code>Resources.resx</code> - containing English language will be chosen.</p>
+If no fitting <code>&lt;lang&gt;</code> is present for the current system, the default/fallback <code>Resources.resx</code> - containing the English language will be chosen.</p>
 <h2 id="adding-a-new-language">Adding A New Language</h2>
 <ol>
 <li>Make sure you're up-to-date with ChocolateyGUI/develop</li>
@@ -120,16 +119,16 @@ If no fitting <code>&lt;lang&gt;</code> is present for the current system, the d
 <li>Use the resource-editor to change the name-value pairs of the new file</li>
 </ol>
 <h3 id="testing-other-languages">Testing Other Languages</h3>
-<p>When testing another language (that does not match the current system locale), a little code-snipped has to be added.
+<p>When testing another language (that does not match the current system locale), a little code-snippet has to be added.
 Add the following to your App.xaml.cs (right before <code>application.Run();</code>)</p>
 <ul>
 <li><strong>Don't forget</strong> to remove this line of code after you're done testing!</li>
 </ul>
-<pre><code>System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(&quot;&lt;lang&gt;&quot;);
+<pre><code class="language-cs">System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(&quot;&lt;lang&gt;&quot;);
 application.Run();
 </code></pre>
 <h2 id="adding-new-strings-to-chocolateygui">Adding New Strings To ChocolateyGUI</h2>
-<p>Following rules of thumb apply for adding entirely new strings to ChocolateyGUI</p>
+<p>The following rules of thumb apply for adding entirely new strings to ChocolateyGUI:</p>
 <ul>
 <li>Always use static bindings (lang:Resources.xyz)</li>
 <li>Use context-sensitive names (<code>PageOrControlName_StringUsageHintOrName</code>)</li>
