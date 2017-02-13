@@ -5,8 +5,8 @@
 		<link>http://chocolatey.github.io/ChocolateyGUI</link>
 		<description />
 		<copyright>2017</copyright>
-		<pubDate>Thu, 09 Feb 2017 20:56:24 GMT</pubDate>
-		<lastBuildDate>Thu, 09 Feb 2017 20:56:24 GMT</lastBuildDate>
+		<pubDate>Mon, 13 Feb 2017 21:02:27 GMT</pubDate>
+		<lastBuildDate>Mon, 13 Feb 2017 21:02:27 GMT</lastBuildDate>
 		<item>
 			<title>ChocolateyGUI 0.13.2</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.13.2</link>
@@ -40,19 +40,19 @@
 			<pubDate>Wed, 11 Mar 2015 00:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>ChocolateyGUI 0.12.2</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</link>
-			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</guid>
-			<pubDate>Tue, 03 Mar 2015 00:00:00 GMT</pubDate>
-		</item>
-		<item>
 			<title>ChocolateyGUI 0.12.3</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.3</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
 			<author>gep13</author>
 			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.3</guid>
+			<pubDate>Tue, 03 Mar 2015 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title>ChocolateyGUI 0.12.2</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</link>
+			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
+			<author>gep13</author>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</guid>
 			<pubDate>Tue, 03 Mar 2015 00:00:00 GMT</pubDate>
 		</item>
 		<item>
@@ -72,19 +72,19 @@
 			<pubDate>Sat, 28 Feb 2015 00:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>ChocolateyGUI 0.11.2</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.2</link>
-			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.2</guid>
-			<pubDate>Tue, 16 Sep 2014 00:00:00 GMT</pubDate>
-		</item>
-		<item>
 			<title>ChocolateyGUI 0.11.4</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
 			<author>gep13</author>
 			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</guid>
+			<pubDate>Tue, 16 Sep 2014 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title>ChocolateyGUI 0.11.2</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.2</link>
+			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
+			<author>gep13</author>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.2</guid>
 			<pubDate>Tue, 16 Sep 2014 00:00:00 GMT</pubDate>
 		</item>
 		<item>
@@ -104,14 +104,6 @@
 			<pubDate>Wed, 20 Feb 2013 00:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>ChocolateyGUI 0.1.1</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1</link>
-			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1</guid>
-			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
-		</item>
-		<item>
 			<title>ChocolateyGUI 0.1.2</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.2</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
@@ -120,11 +112,11 @@
 			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>ChocolateyGUI 0.1.3</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3</link>
+			<title>ChocolateyGUI 0.1.1</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
 			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3</guid>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1</guid>
 			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
 		</item>
 		<item>
@@ -133,6 +125,14 @@
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
 			<author>gep13</author>
 			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.4</guid>
+			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title>ChocolateyGUI 0.1.3</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3</link>
+			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
+			<author>gep13</author>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3</guid>
 			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
 		</item>
 		<item>
