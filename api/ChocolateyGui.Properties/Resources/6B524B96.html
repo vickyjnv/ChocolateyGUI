@@ -1,0 +1,406 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
+        <title>Docs - API - Resources.SettingsViewModel_SavingSource Property</title>
+        <link href="/ChocolateyGUI/assets/css/mermaid.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/highlight.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/ChocolateyGUI/assets/css/override.css" rel="stylesheet">
+        <script src="/ChocolateyGUI/assets/js/jQuery-2.2.3.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/bootstrap.min.js"></script>        
+        <script src="/ChocolateyGUI/assets/js/app.min.js"></script>         
+        <script src="/ChocolateyGUI/assets/js/highlight.pack.js"></script>   
+        <script src="/ChocolateyGUI/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/mermaid.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/ChocolateyGUI/assets/js/html5shiv.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/ChocolateyGUI/" class="logo">
+                            <span>Docs</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/ChocolateyGUI/about">About</a></li>
+        <li><a href="/ChocolateyGUI/credits">Credits</a></li>
+        <li><a href="/ChocolateyGUI/docs">Docs</a></li>
+        <li><a href="/ChocolateyGUI/blog">Blog</a></li>
+        <li class="active"><a href="/ChocolateyGUI/api">API</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Value">Value</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">                    
+                    	
+	    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+			<li class="header">Namespace</li>
+		<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties">ChocolateyGui<wbr>.Properties</a></li>
+		<li class="header">Type</li>
+		<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources">Resources</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Property Members</li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/24C10720">Bootstrapper_<wbr>Unhandled<wbr>Exception</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/46044481">Chocolatey<wbr>Custom<wbr>Scheme<wbr>Provider_<wbr>Invalid<wbr>Html</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/0F6FDD34">Chocolatey<wbr>Custom<wbr>Scheme<wbr>Provider_<wbr>Unknown<wbr>Host</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F7ED856E">Chocolatey<wbr>Dialog_<wbr>Console<wbr>Output</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/ED5416BF">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Exception<wbr>Format</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/BB64D8BB">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Install<wbr>Failed<wbr>Message</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/26DFF178">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Install<wbr>Failed<wbr>Title</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/DB48BAB6">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Pin<wbr>Failed<wbr>Message</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6F61563E">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Pin<wbr>Failed<wbr>Title</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/33A9E00C">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Uninstall<wbr>Failed<wbr>Message</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7479728C">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Uninstall<wbr>Failed<wbr>Title</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/AF7B0CCD">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Unpin<wbr>Failed<wbr>Message</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6BB2484B">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Unpin<wbr>Failed<wbr>Title</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/D2DEA54A">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Update<wbr>Failed<wbr>Message</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/CA5D749C">Chocolatey<wbr>Remote<wbr>Package<wbr>Service_<wbr>Update<wbr>Failed<wbr>Title</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/054ACEF7">Controls_<wbr>Package<wbr>List<wbr>By<wbr>Author</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/FFAABEDB">Controls_<wbr>Package<wbr>List<wbr>Downloads</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7690ED7F">Controls_<wbr>Package<wbr>List<wbr>Tags</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/570F87A7">Controls_<wbr>Packages<wbr>Context<wbr>Menu<wbr>Details</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/A4B96BFA">Controls_<wbr>Packages<wbr>Context<wbr>Menu<wbr>Install</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/FC4F0020">Controls_<wbr>Packages<wbr>Context<wbr>Menu<wbr>Pin</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/CF990A21">Controls_<wbr>Packages<wbr>Context<wbr>Menu<wbr>Reinstall</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/50E80118">Controls_<wbr>Packages<wbr>Context<wbr>Menu<wbr>Uninstall</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/4D650942">Controls_<wbr>Packages<wbr>Context<wbr>Menu<wbr>Unpin</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/5A0C6059">Controls_<wbr>Packages<wbr>Context<wbr>Menu<wbr>Update</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/ED7A2C0E">Culture</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6D1F2C8B">Local<wbr>Source<wbr>View_<wbr>Button<wbr>Export</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/CC612251">Local<wbr>Source<wbr>View_<wbr>Button<wbr>Refresh<wbr>Pkgs</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/8B48830D">Local<wbr>Source<wbr>View_<wbr>Button<wbr>Update<wbr>All</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/C8685657">Local<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Match<wbr>Exact</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/8C5A6C39">Local<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Pkgs<wbr>With<wbr>Updates</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/A02F5F32">Local<wbr>Source<wbr>View_<wbr>Grid_<wbr>Authors</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/AA5CD45E">Local<wbr>Source<wbr>View_<wbr>Grid_<wbr>Latest<wbr>Version</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6BB3751E">Local<wbr>Source<wbr>View_<wbr>Grid_<wbr>Name</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/32D64F03">Local<wbr>Source<wbr>View_<wbr>Grid_<wbr>Version</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/99D97D58">Local<wbr>Source<wbr>View_<wbr>Search<wbr>Box<wbr>Text</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/EE8D3BD6">Local<wbr>Source<wbr>View<wbr>Model_<wbr>Chocolatey</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/DAE50ED0">Local<wbr>Source<wbr>View<wbr>Model_<wbr>Config<wbr>Files</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/5EABFAC5">Local<wbr>Source<wbr>View<wbr>Model_<wbr>Packages</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/88F5FF06">Local<wbr>Source<wbr>View<wbr>Model_<wbr>Update<wbr>Available<wbr>For<wbr>Chocolatey</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/93199630">PackageView_Authors</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/B4D357F0">Package<wbr>View_<wbr>Button<wbr>Install</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7A21B60C">Package<wbr>View_<wbr>Button<wbr>Pin</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/E409AFC6">Package<wbr>View_<wbr>Button<wbr>Reinstall</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7B78A4FF">Package<wbr>View_<wbr>Button<wbr>Uninstall</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/693ADA85">Package<wbr>View_<wbr>Button<wbr>Unpin</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/D43BA465">Package<wbr>View_<wbr>Button<wbr>Update</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/69228611">Package<wbr>View_<wbr>Dependencies</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/79C1FA30">Package<wbr>View_<wbr>Description</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F5CE6F0D">Package<wbr>View_<wbr>Downloads</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F84BB1F9">PackageView_Gallery</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/33B76001">Package<wbr>View_<wbr>Last<wbr>Update</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/DBC7F2E9">PackageView_License</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/468E10A8">Package<wbr>View_<wbr>Maintainers</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/B65D2F88">Package<wbr>View_<wbr>Package<wbr>I<wbr>D</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/44D8A501">Package<wbr>View_<wbr>Package<wbr>Size</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/9CE47F4B">Package<wbr>View_<wbr>Project<wbr>Site</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/601B812B">Package<wbr>View_<wbr>Release<wbr>Notes</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/8AB0792A">Package<wbr>View_<wbr>Report<wbr>Abuse</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/A155B270">PackageView_Summary</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7E92CAE6">Package<wbr>View_<wbr>Total<wbr>Downloads</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/B7CDE7E9">Package<wbr>View<wbr>Model_<wbr>Display<wbr>Name</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/73568E82">Package<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Install</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/ACBC3B82">Package<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Pin</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/1B4DC6DF">Package<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Reinstall</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/843CCDE6">Package<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Uninstall</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/843906DC">Package<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Unpin</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/127946BB">Package<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Update</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/4AC8150C">Package<wbr>View<wbr>Model_<wbr>Installing<wbr>Package</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/BE2C98BF">Package<wbr>View<wbr>Model_<wbr>Loading<wbr>Package<wbr>Info</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F39F9D08">Package<wbr>View<wbr>Model_<wbr>Pinning<wbr>Package</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/05D28BC4">Package<wbr>View<wbr>Model_<wbr>Ran<wbr>Into<wbr>Install<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/032802B9">Package<wbr>View<wbr>Model_<wbr>Ran<wbr>Into<wbr>Pinning<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/5C87E511">Package<wbr>View<wbr>Model_<wbr>Ran<wbr>Into<wbr>Reinstall<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/3F92E193">Package<wbr>View<wbr>Model_<wbr>Ran<wbr>Into<wbr>Uninstall<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/0A0B04CE">Package<wbr>View<wbr>Model_<wbr>Ran<wbr>Into<wbr>Unpin<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/04552DAB">Package<wbr>View<wbr>Model_<wbr>Ran<wbr>Into<wbr>Update<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7CD2A9B5">Package<wbr>View<wbr>Model_<wbr>Reinstalling<wbr>Package</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/DB68BA70">Package<wbr>View<wbr>Model_<wbr>Start<wbr>Loading<wbr>Format</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/592A4002">Package<wbr>View<wbr>Model_<wbr>Uninstalling<wbr>Package</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/90E05C7D">Package<wbr>View<wbr>Model_<wbr>Unpinning<wbr>Package</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/610471F6">Package<wbr>View<wbr>Model_<wbr>Updating<wbr>Package</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/350E32D5">Remote<wbr>Source<wbr>View_<wbr>Authors</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/1F26B6F1">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Go<wbr>Back<wbr>A<wbr>Page</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/3E2393FC">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Go<wbr>Forward<wbr>A<wbr>Page</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/81C9F9C7">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Goto<wbr>First<wbr>Page</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/4669F548">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Goto<wbr>Last<wbr>Page</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/06F3DBAD">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Refresh<wbr>Pkgs</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/270AD8F7">Remote<wbr>Source<wbr>View_<wbr>Checkbox<wbr>All<wbr>Versions</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F9A9A0A5">Remote<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Include<wbr>Prerelease</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/FCAD2CFA">Remote<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Match<wbr>Exactly</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F9B5E176">Remote<wbr>Source<wbr>View_<wbr>Downloads</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/9D78ED33">Remote<wbr>Source<wbr>View_<wbr>Search<wbr>Box<wbr>Text</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/01239DCD">Remote<wbr>Source<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Load</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/FBA89294">Remote<wbr>Source<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Load<wbr>Remote<wbr>Packages</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/64035389">Remote<wbr>Source<wbr>View<wbr>Model_<wbr>Feed<wbr>Search<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/3CCBC706">Remote<wbr>Source<wbr>View<wbr>Model_<wbr>Loading<wbr>Page</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/E53D83EB">Remote<wbr>Source<wbr>View<wbr>Model_<wbr>Unable<wbr>To<wbr>Connect<wbr>To<wbr>Feed</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/484D83CC">ResourceManager</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/638230DA">Resources_ThisPC</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/739404E8">SettingsView_About</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/4C981602">Settings<wbr>View_<wbr>Button<wbr>Cancel</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7E8D39E9">Settings<wbr>View_<wbr>Button<wbr>New</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/0E40803C">Settings<wbr>View_<wbr>Button<wbr>Remove</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/3309EFE4">Settings<wbr>View_<wbr>Button<wbr>Save</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/71A1A826">Settings<wbr>View_<wbr>Choco<wbr>Gui</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/2D105412">SettingsView_Credits</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/9C9FF14D">Settings<wbr>View_<wbr>Features</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/011B0E54">SettingsView_Off</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/84D0FDD1">SettingsView_On</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/D43B7683">SettingsView_Options</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/E6A50228">Settings<wbr>View_<wbr>Property<wbr>Description</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/679D4E23">Settings<wbr>View_<wbr>Property<wbr>Name</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/1964BF27">Settings<wbr>View_<wbr>Property<wbr>Value</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F2480082">Settings<wbr>View_<wbr>Release<wbr>Notes</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/4AE37417">Settings<wbr>View_<wbr>Settings</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/A1A41E81">SettingsView_Sources</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/1986D3CC">Settings<wbr>View_<wbr>Sources<wbr>Certificate</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/7A1C2C9E">Settings<wbr>View_<wbr>Sources<wbr>Certificate<wbr>Pass</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/13E6D11D">Settings<wbr>View_<wbr>Sources<wbr>Disabled</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/B5281A4C">Settings<wbr>View_<wbr>Sources<wbr>Id</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/801823E8">Settings<wbr>View_<wbr>Sources<wbr>Is<wbr>Disabled</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/25CEEDAC">Settings<wbr>View_<wbr>Sources<wbr>Password</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/84233ECE">Settings<wbr>View_<wbr>Sources<wbr>Path</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/D75489FB">Settings<wbr>View_<wbr>Sources<wbr>Priority</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/43D0F05F">Settings<wbr>View_<wbr>Sources<wbr>Source</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/878E7161">Settings<wbr>View_<wbr>Sources<wbr>Username</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/1517F646">Settings<wbr>View_<wbr>Subheader<wbr>Choco</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/E77D2F51">Settings<wbr>View_<wbr>Toggle<wbr>Elevate<wbr>By<wbr>Default</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/060EA8DB">Settings<wbr>View_<wbr>Toggle<wbr>Show<wbr>Console<wbr>Output</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/37C6C61D">Settings<wbr>View<wbr>Model_<wbr>Display<wbr>Name</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/CA1B0104">Settings<wbr>View<wbr>Model_<wbr>Feature<wbr>Failed<wbr>To<wbr>Update</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/46FA5EF6">Settings<wbr>View<wbr>Model_<wbr>Feature<wbr>Updates<wbr>Error</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/09B9360D">Settings<wbr>View<wbr>Model_<wbr>Removing<wbr>Source</a></li>
+				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6B524B96">Settings<wbr>View<wbr>Model_<wbr>Saving<wbr>Source</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/EB6722E7">Settings<wbr>View<wbr>Model_<wbr>Saving<wbr>Source<wbr>Loading</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/FED256A7">Settings<wbr>View<wbr>Model_<wbr>Source<wbr>Missing<wbr>Id</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/720E2E8A">Settings<wbr>View<wbr>Model_<wbr>Source<wbr>Missing<wbr>Value</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/E188C7CB">Shell<wbr>View_<wbr>Button<wbr>About</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/A041F90D">Shell<wbr>View_<wbr>Button<wbr>Settings</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/70088A66">SourcesView_Choco</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/71413E92">Version<wbr>Number<wbr>Provider_<wbr>Version<wbr>Format</a></li>
+
+
+                    </ul>
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+			<h3><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources">Resources</a>.</h3>
+	<h1>Settings<wbr>View<wbr>Model_<wbr>Saving<wbr>Source <small>Property</small></h1>
+</section>
+<section class="content">
+	
+	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+      Looks up a localized string similar to Saving Source.
+    </div>
+
+		<div class="panel panel-default">
+  			<div class="panel-body">
+				<dl class="dl-horizontal">	
+						
+						<dt>Namespace</dt>
+						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.Properties">ChocolateyGui<wbr>.Properties</a></dd>
+					
+						<dt>Containing Type</dt>
+						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources">Resources</a></dd>		
+					
+				</dl>
+  			</div>
+		</div>
+
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>public static string SettingsViewModel_SavingSource { get; }</code></pre>
+
+
+
+
+
+	<h1 id="Value">Value</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+					<td>string</td>
+					<td></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div class="github-button">
+    <a href="https://github.com/chocolatey/ChocolateyGUI"><i class="fa fa-github"></i> GitHub</a>
+</div>
+<script>
+    ((window.gitter = {}).chat = {}).options = {
+        room: 'chocolatey/ChocolateyGUI'
+    };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).load(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        htmlLabels: false,
+                        useMaxWidth:false
+                    }
+                });  
+                mermaid.init(undefined, ".mermaid")
+                $('svg').addClass('img-responsive');
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
