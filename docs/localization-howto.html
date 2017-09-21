@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - Localization Howto</title>
+        <title>ChocolateyGUI - Localization Howto</title>
         <link href="/ChocolateyGUI/assets/css/mermaid.css" rel="stylesheet">
         <link href="/ChocolateyGUI/assets/css/highlight.css" rel="stylesheet">
         <link href="/ChocolateyGUI/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -17,7 +17,7 @@
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/ChocolateyGUI/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="/ChocolateyGUI/assets/css/override.css" rel="stylesheet" />
-        <script src="/ChocolateyGUI/assets/js/jQuery-2.2.3.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/ChocolateyGUI/assets/js/bootstrap.min.js"></script>        
         <script src="/ChocolateyGUI/assets/js/app.min.js"></script>         
         <script src="/ChocolateyGUI/assets/js/highlight.pack.js"></script>   
@@ -38,7 +38,7 @@
             <header class="main-header">   
                      
                 <a href="/ChocolateyGUI/" class="logo">
-                            <span>Docs</span>
+                            <span>ChocolateyGUI</span>
                 </a>   
                          
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -104,9 +104,9 @@
 	</section>
 	<section class="content">
 		<h2 id="basics">Basics</h2>
-<p>To enable using localized strings in the ChocolateyGUI UI, the UI loads all its strings from a set of resource files called <code>resx</code> files.
+<p>To enable using localized strings in the Chocolatey GUI UI, the UI loads all its strings from a set of resource files called <code>resx</code> files.
 These <code>resx</code> files allows defining language and culture specific strings and resources, while having english fallbacks when they aren't present.
-This allows ChocolateyGUI to, in general, be localization neutral.
+This allows Chocolatey GUI to, in general, be localization neutral.
 For more information about localizaton using <code>resx</code> check the CultureInfo section on <a href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.110).aspx">MSDN</a>.</p>
 <p>The most important thing to remember is: each language has it's own <code>Resources.&lt;lang&gt;.resx</code>, where <code>&lt;lang&gt;</code> is referring to the language culture name (as an example <code>de</code> for German or <code>nl</code> for Dutch).
 A list of available cultures and their corresponding codes tags can be found <a href="https://msdn.microsoft.com/en-us/library/cc233982.aspx">here</a>.
@@ -114,7 +114,7 @@ If no fitting <code>&lt;lang&gt;</code> is present for the current system, the d
 <h2 id="adding-a-new-language">Adding A New Language</h2>
 <ol>
 <li>Make sure you're up-to-date with ChocolateyGUI/develop</li>
-<li>Create a fork of ChocolateyGUI and a new branch named <code>localization/&lt;lang&gt;</code></li>
+<li>Create a fork of Chocolatey GUI and a new branch named <code>localization/&lt;lang&gt;</code></li>
 <li>In VisualStudio: create a copy of <code>Resources.resx</code> in the Properties folder and rename it to <code>Resources.&lt;lang&gt;.resx</code></li>
 <li>Use the resource-editor to change the name-value pairs of the new file</li>
 </ol>
@@ -127,8 +127,8 @@ Add the following to your App.xaml.cs (right before <code>application.Run();</co
 <pre><code class="language-cs">System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(&quot;&lt;lang&gt;&quot;);
 application.Run();
 </code></pre>
-<h2 id="adding-new-strings-to-chocolateygui">Adding New Strings To ChocolateyGUI</h2>
-<p>The following rules of thumb apply for adding entirely new strings to ChocolateyGUI:</p>
+<h2 id="adding-new-strings-to-chocolatey-gui">Adding New Strings To Chocolatey GUI</h2>
+<p>The following rules of thumb apply for adding entirely new strings to Chocolatey GUI:</p>
 <ul>
 <li>Always use static bindings (lang:Resources.xyz)</li>
 <li>Use context-sensitive names (<code>PageOrControlName_StringUsageHintOrName</code>)</li>
