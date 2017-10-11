@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
-        <title>ChocolateyGUI - API - PackageViewModel.Copyright Property</title>
+        <title>ChocolateyGUI - API - IChocolateyService.GetOutdatedPackages(bool, string) Method</title>
         <link href="/ChocolateyGUI/assets/css/mermaid.css" rel="stylesheet">
         <link href="/ChocolateyGUI/assets/css/highlight.css" rel="stylesheet">
         <link href="/ChocolateyGUI/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -75,7 +75,8 @@
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Value">Value</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -127,61 +128,29 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Namespace</li>
-		<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items">ChocolateyGui<wbr>.ViewModels<wbr>.Items</a></li>
+		<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services">ChocolateyGui<wbr>.Services</a></li>
 		<li class="header">Type</li>
-		<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel">PackageViewModel</a></li>
+		<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService">IChocolateyService</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Constructors</li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/0B75E25F">PackageViewModel<wbr>(<wbr>I<wbr>Chocolatey<wbr>Service, <wbr>IEventAggregator, <wbr>IMapper, <wbr>IProgressService)<wbr></a></li>
-			<li class="header">Property Members</li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/C86797B4">Authors</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/5A998AC2">CanUpdate</a></li>
-				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/16236F90">Copyright</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/21FAA688">Created</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/643C888B">Dependencies</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/F87A5781">Description</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/D1FD7AD5">DownloadCount</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/8F91BD23">GalleryDetailsUrl</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/D55C58C4">IconUrl</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/5E056EBA">Id</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/1FC6DD98">Is<wbr>Absolute<wbr>Latest<wbr>Version</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/01818A8D">IsInstalled</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/1889BE1D">IsLatestVersion</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/905FA6AD">IsPinned</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/4AF70834">IsPrerelease</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/146D00F3">IsSideBySide</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/18C1325D">Language</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/ECF0A196">LastUpdated</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/CE63B184">LatestVersion</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/F4AEBD3C">LicenseUrl</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/9BC56E6C">Owners</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/17257096">PackageHash</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/E5289449">PackageHashAlgorithm</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/C56308B0">PackageSize</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/2321DF6C">ProjectUrl</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/F256D2C0">Published</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/6D058FB1">ReleaseNotes</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/322324A2">ReportAbuseUrl</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/661DEB51">Require<wbr>License<wbr>Acceptance</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/12289671">Source</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/FA2BB3F4">Summary</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/8BBC8352">Tags</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/16986C83">Title</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/5A9E8785">Version</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/B8897E57">VersionDownloadCount</a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/54EA656B">Handle<wbr>(<wbr>Package<wbr>Has<wbr>Update<wbr>Message)<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/35D8DAFB">Install<wbr>()<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Base/ObservableBase/68C62194">Notify<wbr>Property<wbr>Changed<wbr>(string)<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/0CB39BCC">Pin<wbr>()<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/EB72E573">Reinstall<wbr>()<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Base/ObservableBase/35665A62">SetPropertyValue<wbr>&lt;T&gt;<wbr><wbr>(T, <wbr>T, <wbr>string)<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/7403EE4A">Uninstall<wbr>()<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/5CD6BEE2">Unpin<wbr>()<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/1B9B7033">Update<wbr>()<wbr></a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/3E5DD694">ViewDetails<wbr>()<wbr></a></li>
-			<li class="header">Event Members</li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Base/ObservableBase/E2BCEA44">PropertyChanged</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/D00F3DBE">AddSource<wbr>(ChocolateySource)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/BFB3D968">Get<wbr>By<wbr>Version<wbr>And<wbr>Id<wbr>Async<wbr>(string, <wbr>string, <wbr>bool)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/E41D54A8">GetFeatures<wbr>()<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/961801F2">GetInstalledPackages<wbr>()<wbr></a></li>
+				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/599B6EF0">GetOutdatedPackages<wbr>(bool, <wbr>string)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/3261D1F2">GetSettings<wbr>()<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/6CD122F1">GetSources<wbr>()<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/1B056E2D">InstallPackage<wbr>(string, <wbr>string, <wbr>Uri, <wbr>bool)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/89CD5019">IsElevated<wbr>()<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/69D35739">PinPackage<wbr>(string, <wbr>string)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/A74E892B">RemoveSource<wbr>(string)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/1923C0BC">Search<wbr>(string, <wbr>Package<wbr>Search<wbr>Options)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/0A88DDA8">SetFeature<wbr>(ChocolateyFeature)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/A924AD7D">SetSetting<wbr>(ChocolateySetting)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/D9150E1A">UninstallPackage<wbr>(string, <wbr>string, <wbr>bool)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/90F833F3">UnpinPackage<wbr>(string, <wbr>string)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/B061094C">UpdatePackage<wbr>(string, <wbr>Uri)<wbr></a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService/8BA5D84A">UpdateSource<wbr>(string, <wbr>ChocolateySource)<wbr></a></li>
 
 
                     </ul>
@@ -195,35 +164,60 @@
 
 
 <section class="content-header">
-			<h3><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel">PackageViewModel</a>.</h3>
-	<h1>Copyright <small>Property</small></h1>
+			<h3><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService">IChocolateyService</a>.</h3>
+	<h1>GetOutdatedPackages<wbr>(bool, <wbr>string)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 	
 		<div class="panel panel-default">
-  			<div class="panel-body">
+  			<div class="panel-body">	
 				<dl class="dl-horizontal">	
 						
 						<dt>Namespace</dt>
-						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items">ChocolateyGui<wbr>.ViewModels<wbr>.Items</a></dd>
+						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.Services">ChocolateyGui<wbr>.Services</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel">PackageViewModel</a></dd>		
+						<dd><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService">IChocolateyService</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public string Copyright { get; set; }</code></pre>
+	<pre><code>Task&lt;IReadOnlyList&lt;Tuple&lt;string, SemanticVersion&gt;&gt;&gt; GetOutdatedPackages(bool includePrerelease = false, string packageName = null)</code></pre>
 
 
 
 
 
-	<h1 id="Value">Value</h1>
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>includePrerelease</td>
+						<td>bool</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>packageName</td>
+						<td>string</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">
 		<div class="box-body no-padding table-responsive">
 			<table class="table table-striped table-hover two-cols">
@@ -234,7 +228,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>string</td>
+					<td>Task<wbr>&lt;IReadOnlyList<wbr>&lt;Tuple<wbr>&lt;string, <wbr>SemanticVersion&gt;<wbr>&gt;<wbr>&gt;<wbr></td>
 					<td></td>
 				</tr>
 			</tbody></table>

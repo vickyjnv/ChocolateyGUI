@@ -133,12 +133,12 @@
 			<li class="header">Namespace</li>
 		<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items">ChocolateyGui<wbr>.ViewModels<wbr>.Items</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Interface Types</li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a></li>
 			<li class="header">Class Types</li>
 				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel">PackageViewModel</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/SourceTabViewModel">SourceTabViewModel</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/SourceViewModel">SourceViewModel</a></li>
+			<li class="header">Interface Types</li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a></li>
 
 
                     </ul>
@@ -171,7 +171,6 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a></li>								
-											<li>IHandleWithTask<wbr>&lt;<wbr>Package<wbr>Changed<wbr>Message&gt;<wbr></li>								
 											<li>IHandle<wbr>&lt;<wbr>Package<wbr>Has<wbr>Update<wbr>Message&gt;<wbr></li>								
 									</ul>
 								</dd>
@@ -195,8 +194,7 @@
 	Base1["INotifyPropertyChanged"]--&gt;Base0
 	Interface0["IPackageViewModel"]-.-&gt;Type
 	click Interface0 "/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel"
-	Interface1["IHandleWithTask&lt;PackageChangedMessage&gt;"]-.-&gt;Type
-	Interface2["IHandle&lt;PackageHasUpdateMessage&gt;"]-.-&gt;Type
+	Interface1["IHandle&lt;PackageHasUpdateMessage&gt;"]-.-&gt;Type
 	Type["PackageViewModel"]
 class Type type-node
 
@@ -208,8 +206,7 @@ class Type type-node
 
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>[DebuggerDisplay("Id = {Id}, Version = {Version}")]
-public class PackageViewModel : ObservableBase, IPackageViewModel, 
-    IHandleWithTask&lt;PackageChangedMessage&gt;, IHandle&lt;PackageHasUpdateMessage&gt;</code></pre>
+public class PackageViewModel : ObservableBase, IPackageViewModel, IHandle&lt;PackageHasUpdateMessage&gt;</code></pre>
 
 
 
@@ -394,6 +391,13 @@ public class PackageViewModel : ObservableBase, IPackageViewModel,
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/146D00F3">IsSideBySide</a></td>
+								<td>bool</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/18C1325D">Language</a></td>
 								<td>string</td>
 								<td>
@@ -543,13 +547,6 @@ public class PackageViewModel : ObservableBase, IPackageViewModel,
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/9C7F74B9">Handle<wbr>(<wbr>Package<wbr>Changed<wbr>Message)<wbr></a></td>
-								<td>Task</td>
-								<td>
-									<div></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/PackageViewModel/54EA656B">Handle<wbr>(<wbr>Package<wbr>Has<wbr>Update<wbr>Message)<wbr></a></td>
 								<td>void</td>
 								<td>
@@ -587,7 +584,7 @@ public class PackageViewModel : ObservableBase, IPackageViewModel,
 							</tr>
 							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.Base/ObservableBase/35665A62">SetPropertyValue<wbr>&lt;T&gt;<wbr><wbr>(T, <wbr>T, <wbr>string)<wbr></a></td>
-								<td>void</td>
+								<td>bool</td>
 								<td>
 									<div></div>
 											<div><small><em>Inherited from <a href="/ChocolateyGUI/api/ChocolateyGui.Base/ObservableBase">ObservableBase</a></em></small></div>
