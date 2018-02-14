@@ -59,6 +59,7 @@
                                     <li><a href="/ChocolateyGUI/about">About</a></li>
         <li><a href="/ChocolateyGUI/credits">Credits</a></li>
         <li><a href="/ChocolateyGUI/docs">Docs</a></li>
+        <li><a href="/ChocolateyGUI/tasks">Tasks</a></li>
         <li><a href="/ChocolateyGUI/blog">Blog</a></li>
         <li class="active"><a href="/ChocolateyGUI/api">API</a></li>
  
@@ -86,7 +87,8 @@
 </div>
 
                 </section>
-                <section class="sidebar">                    
+                <section class="sidebar">    
+                                     
                     	
 	    <script src="/ChocolateyGUI/assets/js/lunr.min.js"></script>
     <script src="/ChocolateyGUI/assets/js/searchIndex.js"></script>
@@ -114,7 +116,7 @@
             } else {					
                 for(var i = 0; i < results.length; ++i){
                     var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
                 }				
             }
             listHtml += "</ul>";				
@@ -126,6 +128,13 @@
                 runSearch($("#search").val());
             });
         });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
     </script>
 	
     <hr>
@@ -138,11 +147,12 @@
 			<li class="header">Class Types</li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Controls/FauxPowerShellConsole">Faux<wbr>Power<wbr>Shell<wbr>Console</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Controls/InternetImage">InternetImage</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Controls/MarkdownViewer">MarkdownViewer</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Controls/MarkdownEx">MarkdownEx</a></li>
 				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.Controls/ObservableRingBufferCollection_1">Observable<wbr>Ring<wbr>Buffer<wbr>Collection<wbr>&lt;T&gt;<wbr></a></li>
 
 
                     </ul>
+                            
                 </section>                
             </aside>
             

@@ -59,6 +59,7 @@
                                     <li><a href="/ChocolateyGUI/about">About</a></li>
         <li><a href="/ChocolateyGUI/credits">Credits</a></li>
         <li><a href="/ChocolateyGUI/docs">Docs</a></li>
+        <li><a href="/ChocolateyGUI/tasks">Tasks</a></li>
         <li><a href="/ChocolateyGUI/blog">Blog</a></li>
         <li class="active"><a href="/ChocolateyGUI/api">API</a></li>
  
@@ -81,7 +82,8 @@
 </div>
 
                 </section>
-                <section class="sidebar">                    
+                <section class="sidebar">    
+                                     
                     	
 	    <script src="/ChocolateyGUI/assets/js/lunr.min.js"></script>
     <script src="/ChocolateyGUI/assets/js/searchIndex.js"></script>
@@ -109,7 +111,7 @@
             } else {					
                 for(var i = 0; i < results.length; ++i){
                     var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
                 }				
             }
             listHtml += "</ul>";				
@@ -121,6 +123,13 @@
                 runSearch($("#search").val());
             });
         });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
     </script>
 	
     <hr>
@@ -162,7 +171,9 @@
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/1788EDC0">General_<wbr>Unauthorised<wbr>Exception_<wbr>Description</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/E37F6EA8">General_<wbr>Unauthorised<wbr>Exception_<wbr>Title</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6D1F2C8B">Local<wbr>Source<wbr>View_<wbr>Button<wbr>Export</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/97AA85BE">Local<wbr>Source<wbr>View_<wbr>Button<wbr>List<wbr>View</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/CC612251">Local<wbr>Source<wbr>View_<wbr>Button<wbr>Refresh<wbr>Pkgs</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/758EDBBE">Local<wbr>Source<wbr>View_<wbr>Button<wbr>Tile<wbr>View</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/8B48830D">Local<wbr>Source<wbr>View_<wbr>Button<wbr>Update<wbr>All</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/C8685657">Local<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Match<wbr>Exact</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/8C5A6C39">Local<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Pkgs<wbr>With<wbr>Updates</a></li>
@@ -170,7 +181,10 @@
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/AA5CD45E">Local<wbr>Source<wbr>View_<wbr>Grid_<wbr>Latest<wbr>Version</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6BB3751E">Local<wbr>Source<wbr>View_<wbr>Grid_<wbr>Name</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/32D64F03">Local<wbr>Source<wbr>View_<wbr>Grid_<wbr>Version</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/8ED808DB">Local<wbr>Source<wbr>View_<wbr>Overlay<wbr>Outdated</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/99D97D58">Local<wbr>Source<wbr>View_<wbr>Search<wbr>Box<wbr>Text</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/D4B23A1E">Local<wbr>Source<wbr>View_<wbr>Tool<wbr>Tip_<wbr>Installed<wbr>Side<wbr>By<wbr>Side</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/2F109787">Local<wbr>Source<wbr>View_<wbr>Tool<wbr>Tip_<wbr>Pinned</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/EE8D3BD6">Local<wbr>Source<wbr>View<wbr>Model_<wbr>Chocolatey</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/DAE50ED0">Local<wbr>Source<wbr>View<wbr>Model_<wbr>Config<wbr>Files</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/80179A52">Local<wbr>Source<wbr>View<wbr>Model_<wbr>Fetching<wbr>Packages</a></li>
@@ -223,11 +237,15 @@
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/3E2393FC">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Go<wbr>Forward<wbr>A<wbr>Page</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/81C9F9C7">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Goto<wbr>First<wbr>Page</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/4669F548">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Goto<wbr>Last<wbr>Page</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/2FFE83B9">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>List<wbr>View</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/06F3DBAD">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Refresh<wbr>Pkgs</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/CDDADDB9">Remote<wbr>Source<wbr>View_<wbr>Button<wbr>Tile<wbr>View</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/270AD8F7">Remote<wbr>Source<wbr>View_<wbr>Checkbox<wbr>All<wbr>Versions</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F9A9A0A5">Remote<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Include<wbr>Prerelease</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/FCAD2CFA">Remote<wbr>Source<wbr>View_<wbr>Checkbox<wbr>Match<wbr>Exactly</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F9B5E176">Remote<wbr>Source<wbr>View_<wbr>Downloads</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/3447C1C5">Remote<wbr>Source<wbr>View_<wbr>Overlay<wbr>Installed</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/64E5B51E">Remote<wbr>Source<wbr>View_<wbr>Overlay<wbr>Outdated</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/9D78ED33">Remote<wbr>Source<wbr>View_<wbr>Search<wbr>Box<wbr>Text</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/01239DCD">Remote<wbr>Source<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Load</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/FBA89294">Remote<wbr>Source<wbr>View<wbr>Model_<wbr>Failed<wbr>To<wbr>Load<wbr>Remote<wbr>Packages</a></li>
@@ -273,7 +291,10 @@
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/43D0F05F">Settings<wbr>View_<wbr>Sources<wbr>Source</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/878E7161">Settings<wbr>View_<wbr>Sources<wbr>Username</a></li>
 				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/1517F646">Settings<wbr>View_<wbr>Subheader<wbr>Choco</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/F33F4D4B">Settings<wbr>View_<wbr>Toggle<wbr>Default<wbr>Tile<wbr>View<wbr>Local</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/E92D13D0">Settings<wbr>View_<wbr>Toggle<wbr>Default<wbr>Tile<wbr>View<wbr>Remote</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/060EA8DB">Settings<wbr>View_<wbr>Toggle<wbr>Show<wbr>Console<wbr>Output</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/6D1CB344">Settings<wbr>View_<wbr>Use<wbr>Delayed<wbr>Search</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/37C6C61D">Settings<wbr>View<wbr>Model_<wbr>Display<wbr>Name</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/CA1B0104">Settings<wbr>View<wbr>Model_<wbr>Feature<wbr>Failed<wbr>To<wbr>Update</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Properties/Resources/46FA5EF6">Settings<wbr>View<wbr>Model_<wbr>Feature<wbr>Updates<wbr>Error</a></li>
@@ -289,6 +310,7 @@
 
 
                     </ul>
+                            
                 </section>                
             </aside>
             
