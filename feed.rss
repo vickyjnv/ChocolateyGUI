@@ -5,8 +5,8 @@
 		<link>http://chocolatey.github.io/ChocolateyGUI</link>
 		<description />
 		<copyright>2018</copyright>
-		<pubDate>Wed, 14 Feb 2018 20:43:36 GMT</pubDate>
-		<lastBuildDate>Wed, 14 Feb 2018 20:43:36 GMT</lastBuildDate>
+		<pubDate>Thu, 15 Feb 2018 15:47:18 GMT</pubDate>
+		<lastBuildDate>Thu, 15 Feb 2018 15:47:18 GMT</lastBuildDate>
 		<item>
 			<title>Chocolatey GUI 0.13.2</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.13.2</link>
@@ -96,6 +96,23 @@
 </content:encoded>
 		</item>
 		<item>
+			<title>Chocolatey GUI 0.12.2</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</link>
+			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
+			<author>gep13</author>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</guid>
+			<pubDate>Tue, 03 Mar 2015 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This release includes the following:&lt;/p&gt;
+&lt;h2 id="improvements"&gt;Improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/224"&gt;&lt;strong&gt;#224&lt;/strong&gt;&lt;/a&gt; Show package name in details&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/223"&gt;&lt;strong&gt;#223&lt;/strong&gt;&lt;/a&gt; Highlight packages where update is available&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/222"&gt;&lt;strong&gt;#222&lt;/strong&gt;&lt;/a&gt; Update appveyor.yml configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
 			<title>Chocolatey GUI 0.12.3</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.3</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
@@ -110,23 +127,6 @@
 &lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/227"&gt;&lt;strong&gt;#227&lt;/strong&gt;&lt;/a&gt; Correct deployment url when deploying to Chocolatey.org&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Chocolatey GUI 0.12.2</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</link>
-			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.12.2</guid>
-			<pubDate>Tue, 03 Mar 2015 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This release includes the following:&lt;/p&gt;
-&lt;h2 id="improvements"&gt;Improvements&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/224"&gt;&lt;strong&gt;#224&lt;/strong&gt;&lt;/a&gt; Show package name in details&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/223"&gt;&lt;strong&gt;#223&lt;/strong&gt;&lt;/a&gt; Highlight packages where update is available&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/222"&gt;&lt;strong&gt;#222&lt;/strong&gt;&lt;/a&gt; Update appveyor.yml configuration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
 </content:encoded>
@@ -240,21 +240,6 @@
 </content:encoded>
 		</item>
 		<item>
-			<title>Chocolatey GUI 0.11.4</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</link>
-			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</guid>
-			<pubDate>Tue, 16 Sep 2014 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This release includes the following:&lt;/p&gt;
-&lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/136"&gt;&lt;strong&gt;#136&lt;/strong&gt;&lt;/a&gt; - Correct releasenotes in Chocolatey nuspec file&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
 			<title>Chocolatey GUI 0.11.2</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.2</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
@@ -272,6 +257,21 @@
 &lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/78"&gt;&lt;strong&gt;#78&lt;/strong&gt;&lt;/a&gt; - ChocolateyVersionUnknownException incorrectly thrown&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/64"&gt;&lt;strong&gt;#64&lt;/strong&gt;&lt;/a&gt; - Fix typo in release notes for 0.11.0&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/3"&gt;&lt;strong&gt;#3&lt;/strong&gt;&lt;/a&gt; - There's no uninstall script in the 0.0.5 package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Chocolatey GUI 0.11.4</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</link>
+			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
+			<author>gep13</author>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</guid>
+			<pubDate>Tue, 16 Sep 2014 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This release includes the following:&lt;/p&gt;
+&lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/136"&gt;&lt;strong&gt;#136&lt;/strong&gt;&lt;/a&gt; - Correct releasenotes in Chocolatey nuspec file&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
 </content:encoded>
@@ -345,21 +345,6 @@
 </content:encoded>
 		</item>
 		<item>
-			<title>Chocolatey GUI 0.1.2</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.2</link>
-			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.2</guid>
-			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This release includes the following:&lt;/p&gt;
-&lt;h2 id="improvement"&gt;Improvement&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;package now has iconURL.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
 			<title>Chocolatey GUI 0.1.1</title>
 			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
@@ -375,16 +360,16 @@
 </content:encoded>
 		</item>
 		<item>
-			<title>Chocolatey GUI 0.1.4</title>
-			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.4</link>
+			<title>Chocolatey GUI 0.1.2</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.2</link>
 			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
 			<author>gep13</author>
-			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.4</guid>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.2</guid>
 			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;This release includes the following:&lt;/p&gt;
 &lt;h2 id="improvement"&gt;Improvement&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Better description for the package.&lt;/li&gt;
+&lt;li&gt;package now has iconURL.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
 </content:encoded>
@@ -400,6 +385,21 @@
 &lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Installer did not remove older version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Chocolatey GUI 0.1.4</title>
+			<link>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.4</link>
+			<description>&lt;p&gt;This release includes the following:&lt;/p&gt;</description>
+			<author>gep13</author>
+			<guid>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.4</guid>
+			<pubDate>Sun, 10 Feb 2013 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This release includes the following:&lt;/p&gt;
+&lt;h2 id="improvement"&gt;Improvement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Better description for the package.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
 </content:encoded>
