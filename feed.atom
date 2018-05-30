@@ -4,7 +4,7 @@
 	<id>http://chocolatey.github.io/ChocolateyGUI</id>
 	<title>ChocolateyGUI</title>
 	<rights>2018</rights>
-	<updated>2018-02-15T15:47:18Z</updated>
+	<updated>2018-05-30T09:12:08Z</updated>
 	<entry>
 		<author>
 			<name>gep13</name>
@@ -257,6 +257,23 @@
 		<author>
 			<name>gep13</name>
 		</author>
+		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4" />
+		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</id>
+		<title>Chocolatey GUI 0.11.4</title>
+		<updated>2014-09-16T00:00:00Z</updated>
+		<content>&lt;p&gt;This release includes the following:&lt;/p&gt;
+&lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/136"&gt;&lt;strong&gt;#136&lt;/strong&gt;&lt;/a&gt; - Correct releasenotes in Chocolatey nuspec file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;This release includes the following:&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<author>
+			<name>gep13</name>
+		</author>
 		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.2" />
 		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.2</id>
 		<title>Chocolatey GUI 0.11.2</title>
@@ -272,23 +289,6 @@
 &lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/78"&gt;&lt;strong&gt;#78&lt;/strong&gt;&lt;/a&gt; - ChocolateyVersionUnknownException incorrectly thrown&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/64"&gt;&lt;strong&gt;#64&lt;/strong&gt;&lt;/a&gt; - Fix typo in release notes for 0.11.0&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/3"&gt;&lt;strong&gt;#3&lt;/strong&gt;&lt;/a&gt; - There's no uninstall script in the 0.0.5 package&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;This release includes the following:&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<author>
-			<name>gep13</name>
-		</author>
-		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4" />
-		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.11.4</id>
-		<title>Chocolatey GUI 0.11.4</title>
-		<updated>2014-09-16T00:00:00Z</updated>
-		<content>&lt;p&gt;This release includes the following:&lt;/p&gt;
-&lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/chocolatey/ChocolateyGUI/issues/136"&gt;&lt;strong&gt;#136&lt;/strong&gt;&lt;/a&gt; - Correct releasenotes in Chocolatey nuspec file&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
 </content>
@@ -370,23 +370,6 @@
 		<author>
 			<name>gep13</name>
 		</author>
-		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1" />
-		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1</id>
-		<title>Chocolatey GUI 0.1.1</title>
-		<updated>2013-02-10T00:00:00Z</updated>
-		<content>&lt;p&gt;This release includes the following:&lt;/p&gt;
-&lt;h2 id="improvements"&gt;Improvements&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The installer should now check if .Net framework 4.0 is installed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;This release includes the following:&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<author>
-			<name>gep13</name>
-		</author>
 		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.2" />
 		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.2</id>
 		<title>Chocolatey GUI 0.1.2</title>
@@ -404,14 +387,14 @@
 		<author>
 			<name>gep13</name>
 		</author>
-		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3" />
-		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3</id>
-		<title>Chocolatey GUI 0.1.3</title>
+		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1" />
+		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.1</id>
+		<title>Chocolatey GUI 0.1.1</title>
 		<updated>2013-02-10T00:00:00Z</updated>
 		<content>&lt;p&gt;This release includes the following:&lt;/p&gt;
-&lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
+&lt;h2 id="improvements"&gt;Improvements&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Installer did not remove older version.&lt;/li&gt;
+&lt;li&gt;The installer should now check if .Net framework 4.0 is installed.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
 </content>
@@ -429,6 +412,23 @@
 &lt;h2 id="improvement"&gt;Improvement&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Better description for the package.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;This release includes the following:&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<author>
+			<name>gep13</name>
+		</author>
+		<link href="http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3" />
+		<id>http://chocolatey.github.io/ChocolateyGUI/blog/new-release-0.1.3</id>
+		<title>Chocolatey GUI 0.1.3</title>
+		<updated>2013-02-10T00:00:00Z</updated>
+		<content>&lt;p&gt;This release includes the following:&lt;/p&gt;
+&lt;h2 id="bug"&gt;Bug&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Installer did not remove older version.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;:  This blog post was created after the actual release occured, and is added to here in order to preserve the history of the Chocolatey GUI project.&lt;/p&gt;
 </content>
