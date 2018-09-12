@@ -1,22 +1,20 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
-        <title>ChocolateyGUI - Release (Page 3)</title>
+        <title>ChocolateyGUI - Feature Command (chocolateygui feature)</title>
         <link href="/ChocolateyGUI/assets/css/mermaid.css" rel="stylesheet">
         <link href="/ChocolateyGUI/assets/css/highlight.css" rel="stylesheet">
-        <link href="/ChocolateyGUI/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/ChocolateyGUI/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/ChocolateyGUI/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/ChocolateyGUI/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/ChocolateyGUI/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/ChocolateyGUI/assets/css/override.css" rel="stylesheet" />
+        <link href="/ChocolateyGUI/assets/css/override.css" rel="stylesheet">
         <script src="/ChocolateyGUI/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/ChocolateyGUI/assets/js/bootstrap.min.js"></script>        
         <script src="/ChocolateyGUI/assets/js/app.min.js"></script>         
@@ -60,9 +58,9 @@
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/ChocolateyGUI/about">About</a></li>
         <li><a href="/ChocolateyGUI/credits">Credits</a></li>
-        <li><a href="/ChocolateyGUI/docs">Docs</a></li>
+        <li class="active"><a href="/ChocolateyGUI/docs">Docs</a></li>
         <li><a href="/ChocolateyGUI/tasks">Tasks</a></li>
-        <li class="active"><a href="/ChocolateyGUI/blog">Blog</a></li>
+        <li><a href="/ChocolateyGUI/blog">Blog</a></li>
         <li><a href="/ChocolateyGUI/api">API</a></li>
  
                         </ul>       
@@ -77,7 +75,13 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"></div>
+        <div><p><a href="https://github.com/chocolatey/ChocolateyGUI/tree/develop/docs/input/docs/commands/feature.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#usage">Usage</a></p>
+<p><a href="#examples">Examples</a></p>
+<p><a href="#options-and-switches">Options and Switches</a></p>
+<p><a href="#resources">Resources</a></p>
+<hr class="infobar-hidden">
+</div>
 
                 </section>
                 <section class="sidebar">    
@@ -86,22 +90,21 @@
 
                     <ul class="sidebar-menu">
                         
+                <li><a href="/ChocolateyGUI/docs/localization-howto">Localization Howto</a></li>
+                <li class="treeview active">
+                    <a href="/ChocolateyGUI/docs/commands">Commands</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li class="selected"><a href="/ChocolateyGUI/docs/commands/feature">Feature Command (chocolateygui feature)</a></li>
 
-    <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
-        <li class="selected"><a href="/ChocolateyGUI/blog/Release">Release</a></li>
-    
-    <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
-        <li><a href="/ChocolateyGUI/blog/archive/2018/02">February, 2018</a></li>
-        <li><a href="/ChocolateyGUI/blog/archive/2017/10">October, 2017</a></li>
-        <li><a href="/ChocolateyGUI/blog/archive/2015/12">December, 2015</a></li>
-        <li><a href="/ChocolateyGUI/blog/archive/2015/03">March, 2015</a></li>
-        <li><a href="/ChocolateyGUI/blog/archive/2015/02">February, 2015</a></li>
-        <li><a href="/ChocolateyGUI/blog/archive/2014/09">September, 2014</a></li>
-        <li><a href="/ChocolateyGUI/blog/archive/2013/02">February, 2013</a></li>
-        <li><a href="/ChocolateyGUI/blog/archive/2011/09">September, 2011</a></li>
-    
-    <li class="header"><i class="fa fa-user"></i> Authors</li>    
-        <li><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/ChocolateyGUI/docs/business-features">Business Features</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                                        <li><a href="/ChocolateyGUI/docs/business-features/settings-access">Allow non-admin access to Settings</a></li>
+
+                    </ul>
+                </li>
 
                     </ul>
                             
@@ -115,87 +118,29 @@
 
 
 	<section class="content-header">
-		<h1>Release (Page 3)</h1>
+		<h1>Feature Command (chocolateygui feature)</h1>
 	</section>
 	<section class="content">
-		
+		<p>Chocolatey GUI will allow you to interact with features.</p>
+<h1 id="usage">Usage</h1>
+<pre><code class="language-powershell">chocolateygui feature [list]|disable|enable [&lt;options/switches]
+</code></pre>
+<h1 id="examples">Examples</h1>
+<pre><code class="language-powershell">chocolateygui feature
+chocolateygui feature list
+chocolateygui feature disable -n=bob
+chocolateygui feature enable -n-bob
+</code></pre>
+<h1 id="options-and-switches">Options and Switches</h1>
+<pre><code class="language-powershell">-?, --help, -h
+     Prints out the help menu.
 
-        <h2><a href="/ChocolateyGUI/blog/new-release-0.11.4">Chocolatey GUI 0.11.4</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>16 September 2014</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/ChocolateyGUI/blog/Release">Release</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></dd>
-</dl>            <div>
-                <p>This release includes the following:</p>
-                <a href="/ChocolateyGUI/blog/new-release-0.11.4">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/ChocolateyGUI/blog/new-release-0.11.2">Chocolatey GUI 0.11.2</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>16 September 2014</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/ChocolateyGUI/blog/Release">Release</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></dd>
-</dl>            <div>
-                <p>This release includes the following:</p>
-                <a href="/ChocolateyGUI/blog/new-release-0.11.2">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/ChocolateyGUI/blog/new-release-0.11.1">Chocolatey GUI 0.11.1</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>24 February 2013</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/ChocolateyGUI/blog/Release">Release</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></dd>
-</dl>            <div>
-                <p>This release includes the following:</p>
-                <a href="/ChocolateyGUI/blog/new-release-0.11.1">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/ChocolateyGUI/blog/new-release-0.11.0">Chocolatey GUI 0.11.0</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>20 February 2013</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/ChocolateyGUI/blog/Release">Release</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></dd>
-</dl>            <div>
-                <p>This release includes the following:</p>
-                <a href="/ChocolateyGUI/blog/new-release-0.11.0">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/ChocolateyGUI/blog/new-release-0.1.1">Chocolatey GUI 0.1.1</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>10 February 2013</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/ChocolateyGUI/blog/Release">Release</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></dd>
-</dl>            <div>
-                <p>This release includes the following:</p>
-                <a href="/ChocolateyGUI/blog/new-release-0.1.1">Read more...</a>
-            </div>
-        <hr />
-    <nav>
-        <ul class="pager">
-            <li class="previous">                
-                    <a href="/blog/Release/page2"><span aria-hidden="true">&larr;</span> Newer</a>
-            </li>
-            <li class="next">
-                    <a href="/blog/Release/page4">Older <span aria-hidden="true">&rarr;</span></a>
-            </li>
-        </ul>
-    </nav>
-
+-n, --name=VALUE
+     Name - the name of the feature. Required with some actions. Defaults to empty.
+</code></pre>
+<h1 id="resources">Resources</h1>
+<p>To view a short video about how this command is used, click on the image below:</p>
+<p><a href="http://www.youtube.com/watch?v=_AkDNQFoCtc" title="Chocolatey GUI Feature Command"><img src="http://img.youtube.com/vi/_AkDNQFoCtc/0.jpg" class="img-fluid" alt="Chocolatey GUI Feature Command"></a></p>
 
 	</section>
                 
@@ -220,7 +165,7 @@
         room: 'chocolatey/ChocolateyGUI'
     };
 </script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
         <script>           
             // Close the sidebar if we select an anchor link
             $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
@@ -259,5 +204,5 @@
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>
