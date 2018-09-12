@@ -99,6 +99,7 @@
                 <li><a href="/ChocolateyGUI/tasks/Create-Nuget-Package">Create Nuget Package</a></li>
                 <li><a href="/ChocolateyGUI/tasks/Create-NuGet-Packages">Create Nuget Packages</a></li>
                 <li><a href="/ChocolateyGUI/tasks/Create-Release-Notes">Create Release Notes</a></li>
+                <li><a href="/ChocolateyGUI/tasks/CreateIssuesReport">Createissuesreport</a></li>
                 <li><a href="/ChocolateyGUI/tasks/Default">Default</a></li>
                 <li><a href="/ChocolateyGUI/tasks/Deploy-Graph-Documentation">Deploy Graph Documentation</a></li>
                 <li><a href="/ChocolateyGUI/tasks/DotNetCore-Build">Dotnetcore Build</a></li>
@@ -162,7 +163,8 @@
 graph TD;
 Analyze-->DupFinder;
 Analyze-->InspectCode;
-InspectCode-->Build;
+Analyze-->CreateIssuesReport;
+CreateIssuesReport-->Build;
 Build-->Clean;
 Build-->Restore;
 Build-->Transifex-Pull-Translations;

@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/ChocolateyGUI/assets/img/favicon.ico" type="image/x-icon">
+        <title>ChocolateyGUI - Chocolatey GUI 0.15.0</title>
+        <link href="/ChocolateyGUI/assets/css/mermaid.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/highlight.css" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/ChocolateyGUI/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/ChocolateyGUI/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/ChocolateyGUI/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/ChocolateyGUI/assets/css/override.css" rel="stylesheet" />
+        <script src="/ChocolateyGUI/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/bootstrap.min.js"></script>        
+        <script src="/ChocolateyGUI/assets/js/app.min.js"></script>         
+        <script src="/ChocolateyGUI/assets/js/highlight.pack.js"></script>   
+        <script src="/ChocolateyGUI/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/mermaid.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/ChocolateyGUI/assets/js/html5shiv.min.js"></script>
+        <script src="/ChocolateyGUI/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/ChocolateyGUI/" class="logo">
+                            <span>ChocolateyGUI</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/ChocolateyGUI/about">About</a></li>
+        <li><a href="/ChocolateyGUI/credits">Credits</a></li>
+        <li><a href="/ChocolateyGUI/docs">Docs</a></li>
+        <li><a href="/ChocolateyGUI/tasks">Tasks</a></li>
+        <li class="active"><a href="/ChocolateyGUI/blog">Blog</a></li>
+        <li><a href="/ChocolateyGUI/api">API</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+        <div><p><a href="https://github.com/chocolatey/ChocolateyGUI/tree/develop/docs/input/blog/new-release-0.15.0.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+    <div id="infobar-headings"></div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+    <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
+        <li><a href="/ChocolateyGUI/blog/Release">Release</a></li>
+    
+    <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/ChocolateyGUI/blog/archive/2018/02">February, 2018</a></li>
+        <li><a href="/ChocolateyGUI/blog/archive/2017/10">October, 2017</a></li>
+        <li><a href="/ChocolateyGUI/blog/archive/2015/12">December, 2015</a></li>
+        <li><a href="/ChocolateyGUI/blog/archive/2015/03">March, 2015</a></li>
+        <li><a href="/ChocolateyGUI/blog/archive/2015/02">February, 2015</a></li>
+        <li><a href="/ChocolateyGUI/blog/archive/2014/09">September, 2014</a></li>
+        <li><a href="/ChocolateyGUI/blog/archive/2013/02">February, 2013</a></li>
+        <li><a href="/ChocolateyGUI/blog/archive/2011/09">September, 2011</a></li>
+    
+    <li class="header"><i class="fa fa-user"></i> Authors</li>    
+        <li><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+	<section class="content-header">
+		<h1>Chocolatey GUI 0.15.0</h1>
+	</section>
+	<section class="content">
+		
+
+
+<dl class="dl-horizontal">
+    <dt><i class="fa fa-calendar"></i> Published</dt>
+    <dd>12 October 2017</dd>
+        <dt><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/ChocolateyGUI/blog/Release">Release</a></dd>
+            <dt><i class="fa fa-user"></i> Author</dt>
+        <dd><a href="/ChocolateyGUI/blog/author/gep13">gep13</a></dd>
+</dl>
+
+<p>Version 0.15.0 of Chocolatey GUI has been released.</p>
+<p>Contributions were included from:</p>
+<ul>
+<li><a href="https://github.com/RichiCoder1">RichiCoder1</a></li>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+<li><a href="https://github.com/gep13">gep13</a></li>
+<li><a href="https://github.com/mwallner">mwallner</a></li>
+<li>AdmiringWorm</li>
+<li><a href="https://github.com/magol">magol</a></li>
+<li><a href="https://github.com/cniweb">cniweb</a></li>
+<li><a href="https://github.com/ferventcoder">ferventcoder</a></li>
+<li>Magnus Österlund</li>
+<li><a href="https://github.com/punker76">punker76</a></li>
+</ul>
+<p>Full details of everything that was included in this release can be seen below.</p>
+<!--excerpt-->
+<h3 id="issues">Issues</h3>
+<p>As part of this release we had <a href="https://github.com/chocolatey/ChocolateyGUI/milestone/6?closed=1">115 issues</a> closed.</p>
+<p><strong>Feature</strong></p>
+<ul>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/473"><strong>#473</strong></a> Self Service within ChocolateyGUI.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/451"><strong>#451</strong></a> (GH-371) Enable self-service mode.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/382"><strong>#382</strong></a> Add check for background service.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/371"><strong>#371</strong></a> Add check for useBackgroundService .</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/295"><strong>#295</strong></a> Missing Code Signature.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/275"><strong>#275</strong></a> Chocolatey GUI doesn't save user's preferred window position, size and state.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/246"><strong>#246</strong></a> Allow config editing.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/119"><strong>#119</strong></a> Support file system sources.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/115"><strong>#115</strong></a> Provide ability to update Chocolatey.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/62"><strong>#62</strong></a> Add posibility to have personal sources.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/61"><strong>#61</strong></a> show list of installed packages for that packagename.</li>
+</ul>
+<p><strong>Improvement</strong></p>
+<ul>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/484"><strong>#484</strong></a> Match Gallery Styles.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/482"><strong>#482</strong></a> (GH-452) Support SxS Packages.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/471"><strong>#471</strong></a> Fixes in German translation.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/465"><strong>#465</strong></a> Use highestAvailable instead of subprocess.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/464"><strong>#464</strong></a> Provide ability to set Admin Only flag for source.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/453"><strong>#453</strong></a> Please run processes on another thread.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/439"><strong>#439</strong></a> Package refresh should be automatic and hidden.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/425"><strong>#425</strong></a> Add additional properties to Sources Tab in Settings screen.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/414"><strong>#414</strong></a> update to chocolatey 0.10.4.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/404"><strong>#404</strong></a> Globalization - Norwegian Bokmål.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/399"><strong>#399</strong></a> The &quot;title&quot; of the UI is often wrong or non-sensical.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/359"><strong>#359</strong></a> Order sources by priority and state.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/355"><strong>#355</strong></a> Link not parsed in Release Notes.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/330"><strong>#330</strong></a> Update all button hard to find.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/329"><strong>#329</strong></a> Can't control main window while actions are in progress.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/323"><strong>#323</strong></a> Update dependencies in Chocolatey GUI Wix Script.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/308"><strong>#308</strong></a> (GH-288) Filter packages list after refreshing or updating all packages.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/298"><strong>#298</strong></a> (GH-288) Improved GUI behavior after &quot;update all&quot;.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/292"><strong>#292</strong></a> Scroll to top of packages list when going to a new page.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/286"><strong>#286</strong></a> (GH-285) Add Control Margins.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/285"><strong>#285</strong></a> Add UI padding.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/267"><strong>#267</strong></a> Intergrate with Chocolatey API.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/265"><strong>#265</strong></a> Cannot search for packages AND only show those with updates.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/253"><strong>#253</strong></a> Use the global config sources.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/202"><strong>#202</strong></a> Support for SVG package icons.</li>
+</ul>
+<p><strong>Documentation</strong></p>
+<ul>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/478"><strong>#478</strong></a> German texts in settings page are to long.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/467"><strong>#467</strong></a> Update swedish localization.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/444"><strong>#444</strong></a> (GH-443) Fix inconsistencies in German translation.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/443"><strong>#443</strong></a> Fix inconsistencies in German translation.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/427"><strong>#427</strong></a> More explicitly call out OS support.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/413"><strong>#413</strong></a> Add/Update missing German translation.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/412"><strong>#412</strong></a> (GH-396) Added Swedish translation.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/410"><strong>#410</strong></a> Localization/missing translations.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/408"><strong>#408</strong></a> (GH-404) Added Norwegian Bokmål translation.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/406"><strong>#406</strong></a> (GH-405) Moved hard coded text strings to resource file.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/403"><strong>#403</strong></a> Fix typo.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/402"><strong>#402</strong></a> ChocolateyGUI, Chocolatey GUI, Chocolatey Gui, or something else.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/397"><strong>#397</strong></a> Chocolatey GUI Globalisation HowTo.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/394"><strong>#394</strong></a> Added Gitter and GitHub links.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/373"><strong>#373</strong></a> Generate Documentation/Blog using Wyam.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/315"><strong>#315</strong></a> Update Screenshot in README.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/314"><strong>#314</strong></a> Update Credits.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/311"><strong>#311</strong></a> Update chocolatey's icon.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/280"><strong>#280</strong></a> About &gt; Making a chocolatey package for Chocolatey GUI &gt; 404 not found.</li>
+</ul>
+<p><strong>Bug</strong></p>
+<ul>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/480"><strong>#480</strong></a> Incorrect option in Package Details view.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/470"><strong>#470</strong></a> Seemingly Random Chocolatey GUI Crash.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/469"><strong>#469</strong></a> Issue Launching with Chocolatey Licensed.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/463"><strong>#463</strong></a> List of packages needing updates is truncated randomly.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/462"><strong>#462</strong></a> Updating a package doesn't honour &quot;Show Only Packages with Updates&quot; when list is refreshed.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/460"><strong>#460</strong></a> Access Denied on Launch.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/458"><strong>#458</strong></a> ChocoGUI Crash on Startup -- Windows 10.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/455"><strong>#455</strong></a> Source Configuration - Seeing and Setting Bypass Proxy and Allow Self-Service on a Source doesn't work.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/452"><strong>#452</strong></a> Support displaying multiple versions of locally installed packages.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/450"><strong>#450</strong></a> Chocolatey GUI crashes when started from another working-directory.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/449"><strong>#449</strong></a> Chocolatey GUI crashes when closed while still loading packages.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/448"><strong>#448</strong></a> Random Chocolatey GUI crash.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/447"><strong>#447</strong></a> FileLoadException on launch.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/446"><strong>#446</strong></a> (GH-445) Fix outdated check.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/445"><strong>#445</strong></a> Chocolatey GUI doesn't display VersionInfo from internal feeds.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/440"><strong>#440</strong></a> NullRefEx on launch.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/436"><strong>#436</strong></a> Remove the Hacks where you access Chocolatey's SimpleInjector.Container.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/434"><strong>#434</strong></a> Remove AlphaFS dependency.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/424"><strong>#424</strong></a> Selecting multiple packages with CTRL key to update results in only the first package being updated.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/421"><strong>#421</strong></a> After selecting single package to update upon update completion the UI list of packages remains blank does not refresh.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/411"><strong>#411</strong></a> Pressing setting multiple times make it impossible to go back.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/405"><strong>#405</strong></a> Text/Header strings not prepared to be translated.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/380"><strong>#380</strong></a> Dates are displayed in US format not in machine locale format.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/372"><strong>#372</strong></a> Chocolatey GUI errors on subprocess when attempting to open more than one instance of Chocolatey GUI.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/370"><strong>#370</strong></a> Duplicated entries.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/368"><strong>#368</strong></a> Win7 Powershell5 update.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/360"><strong>#360</strong></a> Error starting v0.14.0-unstable0147.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/358"><strong>#358</strong></a> Option for hiding disabled package sources.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/357"><strong>#357</strong></a> NullReferenceException opening settings while packages are loading.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/353"><strong>#353</strong></a> Errors on console updating package.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/352"><strong>#352</strong></a> NullReferenceException on closing settings.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/333"><strong>#333</strong></a> Chocoatey-View (not This PC): sorting list by downloads causes crash.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/332"><strong>#332</strong></a> Win32Exception upon clicking the &quot;Install GoogleChrome instead&quot; link in &quot;Google Chrome (64-bit only)&quot; detail page.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/331"><strong>#331</strong></a> missing packages in Chocolatey GUI.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/327"><strong>#327</strong></a> System.ArgumentException: An item with the same key has already been added.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/319"><strong>#319</strong></a> Crash using 'Update all'.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/309"><strong>#309</strong></a> Looses filter on refresh.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/307"><strong>#307</strong></a> Installed Packages Not Properly Handled.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/301"><strong>#301</strong></a> Erroneous date format.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/297"><strong>#297</strong></a> Runtime error.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/288"><strong>#288</strong></a> Shows all packages although &quot;Show Only Packages with Updates&quot; is ticked after &quot;update all&quot;.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/266"><strong>#266</strong></a> Chocolatey GUI stuck on &quot;Retrieving installed packages&quot;.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/264"><strong>#264</strong></a> Refreshing package list ignores search query/options.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/263"><strong>#263</strong></a> Settings flyout showing twice.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/256"><strong>#256</strong></a> PSSecurityException.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/225"><strong>#225</strong></a> Error messages.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/124"><strong>#124</strong></a> Problem with opening Sources setting page.</li>
+</ul>
+<p><strong>Internal Refactoring</strong></p>
+<ul>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/393"><strong>#393</strong></a> Remove hard coded path to ruleset file.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/392"><strong>#392</strong></a> Prevent execution of GitLink.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/391"><strong>#391</strong></a> Correct AppVeyor Skip Regular Expression.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/390"><strong>#390</strong></a> Make tools folder invalidation dependent on setup.cake.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/389"><strong>#389</strong></a> Remove Gitter Configuration from yml file.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/388"><strong>#388</strong></a> Change name of appveyor file.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/387"><strong>#387</strong></a> Remove unnecessary Wyam variables.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/82"><strong>#82</strong></a> Update Build Script to include running of Unit Tests.</li>
+</ul>
+<p><strong>:Infastructure</strong></p>
+<ul>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/349"><strong>#349</strong></a> Prepare 0.15 Release.</li>
+</ul>
+<p><strong>Build</strong></p>
+<ul>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/341"><strong>#341</strong></a> Switch Build Infrastructure to Cake.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/317"><strong>#317</strong></a> 0.9.10 and exit codes.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/pull/310"><strong>#310</strong></a> Update and remove unused dependencies.</li>
+<li><a href="https://github.com/chocolatey/ChocolateyGUI/issues/209"><strong>#209</strong></a> Review MSI package.</li>
+</ul>
+<h3 id="where-to-get-it">Where to get it</h3>
+<p>You can download this release from <a href="https://chocolatey.org/packages/chocolateyGUI/0.15.0">chocolatey</a></p>
+<p><strong>NOTE</strong>:  This blog post was created after the actual release occured, and is added here in order to preserve the history of the Chocolatey GUI project.</p>
+
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div class="github-button">
+    <a href="https://github.com/chocolatey/ChocolateyGUI"><i class="fa fa-github"></i> GitHub</a>
+</div>
+<script>
+    ((window.gitter = {}).chat = {}).options = {
+        room: 'chocolatey/ChocolateyGUI'
+    };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).load(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        htmlLabels: false,
+                        useMaxWidth:false
+                    }
+                });  
+                mermaid.init(undefined, ".mermaid")
+                $('svg').addClass('img-responsive');
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    </body>
+</html>

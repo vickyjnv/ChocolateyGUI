@@ -141,6 +141,7 @@
 		<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels">ChocolateyGui<wbr>.ViewModels</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/AboutViewModel">AboutViewModel</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/LocalSourceViewModel">LocalSourceViewModel</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/PackageViewModel">PackageViewModel</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/RemoteSourceViewModel">Remote<wbr>Source<wbr>View<wbr>Model</a></li>
@@ -212,7 +213,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public class ShellViewModel : Conductor&lt;object&gt;.Collection.OneActive, 
     IHandle&lt;ShowPackageDetailsMessage&gt;, IHandle&lt;ShowSourcesMessage&gt;, IHandle&lt;ShowSettingsMessage&gt;, 
-    IHandle&lt;SettingsGoBackMessage&gt;</code></pre>
+    IHandle&lt;ShowAboutMessage&gt;, IHandle&lt;SettingsGoBackMessage&gt;, IHandle&lt;AboutGoBackMessage&gt;</code></pre>
 
 
 
@@ -310,7 +311,21 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/ShellViewModel/6144C682">Handle<wbr>(AboutGoBackMessage)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/ShellViewModel/F5EBE9C9">Handle<wbr>(<wbr>Settings<wbr>Go<wbr>Back<wbr>Message)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/ShellViewModel/00AB8FED">Handle<wbr>(ShowAboutMessage)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div></div>
@@ -339,6 +354,13 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/ShellViewModel/61F325FB">OnInitialize<wbr>()<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/ShellViewModel/673E5B68">ShowAbout<wbr>()<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div></div>
