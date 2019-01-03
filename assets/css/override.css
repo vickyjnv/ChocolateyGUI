@@ -13,12 +13,12 @@
 .gitter-open-chat-button:hover,
 .github-button:focus,
 .github-button:hover {
-  background-color: #4eabdd;
-  color: white;
+  background-color: #4EABDD;
+  color: #fff;
 }
 .gitter-chat-embed {
   top: 49px;
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
   z-index: 10000;
 }
 .github-button {
@@ -40,11 +40,11 @@
   cursor: hand;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: white;
+  color: #fff;
 }
 .github-button a,
 .github-button a:active,
 .github-button a:hover,
 .github-button a:focus {
-  color: white;
+  color: #fff;
 }

@@ -181,7 +181,7 @@
 								<dt>Interfaces</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li>IHandleWithTask<wbr>&lt;&gt;<wbr></li>								
+											<li>IHandleWithTask<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/SourcesUpdatedMessage">Sources<wbr>Updated<wbr>Message</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -199,7 +199,7 @@
 						<div class="mermaid">
 							graph TD
 	Base0["Conductor&lt;ISourceViewModelBase&gt;.Collection.OneActive"]--&gt;Type
-	Interface0["IHandleWithTask&lt;&gt;"]-.-&gt;Type
+	Interface0["IHandleWithTask&lt;SourcesUpdatedMessage&gt;"]-.-&gt;Type
 	Type["SourcesViewModel"]
 class Type type-node
 
@@ -212,6 +212,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public sealed class SourcesViewModel : Conductor&lt;ISourceViewModelBase&gt;.Collection.OneActive, 
     IHandleWithTask&lt;SourcesUpdatedMessage&gt;</code></pre>
+
 
 
 

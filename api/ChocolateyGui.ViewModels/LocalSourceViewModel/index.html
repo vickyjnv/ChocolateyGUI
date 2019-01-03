@@ -183,7 +183,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/ISourceViewModelBase">ISourceViewModelBase</a></li>								
-											<li>IHandleWithTask<wbr>&lt;&gt;<wbr></li>								
+											<li>IHandleWithTask<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/PackageChangedMessage">Package<wbr>Changed<wbr>Message</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -203,7 +203,7 @@
 	Base0["Screen"]--&gt;Type
 	Interface0["ISourceViewModelBase"]-.-&gt;Type
 	click Interface0 "/ChocolateyGUI/api/ChocolateyGui.ViewModels/ISourceViewModelBase"
-	Interface1["IHandleWithTask&lt;&gt;"]-.-&gt;Type
+	Interface1["IHandleWithTask&lt;PackageChangedMessage&gt;"]-.-&gt;Type
 	Type["LocalSourceViewModel"]
 class Type type-node
 
@@ -216,6 +216,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public sealed class LocalSourceViewModel : Screen, ISourceViewModelBase, 
     IHandleWithTask&lt;PackageChangedMessage&gt;</code></pre>
+
 
 
 
@@ -284,7 +285,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/LocalSourceViewModel/4517C923">Packages</a></td>
-								<td>ObservableCollection<wbr>&lt;&gt;<wbr></td>
+								<td>ObservableCollection<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a>&gt;<wbr></td>
 								<td>
 									<div></div>
 								</td>

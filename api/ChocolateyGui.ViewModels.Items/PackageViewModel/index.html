@@ -181,7 +181,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel">IPackageViewModel</a></li>								
-											<li>IHandle<wbr>&lt;&gt;<wbr></li>								
+											<li>IHandle<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/PackageHasUpdateMessage">Package<wbr>Has<wbr>Update<wbr>Message</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -204,7 +204,7 @@
 	Base1["INotifyPropertyChanged"]--&gt;Base0
 	Interface0["IPackageViewModel"]-.-&gt;Type
 	click Interface0 "/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/IPackageViewModel"
-	Interface1["IHandle&lt;&gt;"]-.-&gt;Type
+	Interface1["IHandle&lt;PackageHasUpdateMessage&gt;"]-.-&gt;Type
 	Type["PackageViewModel"]
 class Type type-node
 
@@ -237,6 +237,7 @@ public class PackageViewModel : ObservableBase, IPackageViewModel, IHandle&lt;Pa
 			</tbody></table>
 		</div>
 	</div>	
+
 
 
 

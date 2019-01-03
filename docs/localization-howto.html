@@ -87,25 +87,29 @@
 
                     <ul class="sidebar-menu">
                         
+
                 <li class="selected"><a href="/ChocolateyGUI/docs/localization-howto">Localization Howto</a></li>
                 <li class="treeview">
                     <a href="/ChocolateyGUI/docs/features">Features</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/ChocolateyGUI/docs/features/admin-only-sources">Admin Only Sources</a></li>
+                        
+                <li><a href="/ChocolateyGUI/docs/features/admin-only-sources">Admin Only Sources</a></li>
 
                     </ul>
                 </li>
                 <li class="treeview">
                     <a href="/ChocolateyGUI/docs/commands">Commands</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/ChocolateyGUI/docs/commands/feature">Feature Command (chocolateygui feature)</a></li>
+                        
+                <li><a href="/ChocolateyGUI/docs/commands/feature">Feature Command (chocolateygui feature)</a></li>
 
                     </ul>
                 </li>
                 <li class="treeview">
                     <a href="/ChocolateyGUI/docs/business-features">Business Features</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
-                                        <li><a href="/ChocolateyGUI/docs/business-features/settings-access">Allow non-admin access to Settings</a></li>
+                        
+                <li><a href="/ChocolateyGUI/docs/business-features/settings-access">Allow non-admin access to Settings</a></li>
 
                     </ul>
                 </li>
@@ -121,42 +125,86 @@
 
 
 
-	<section class="content-header">
-		<h1>Localization Howto</h1>
-	</section>
+		<section class="content-header">
+			<h1>Localization Howto</h1>
+		</section>
 	<section class="content">
 		<h2 id="basics">Basics</h2>
 <p>To enable using localized strings in the Chocolatey GUI UI, the UI loads all its strings from a set of resource files called <code>resx</code> files.
-These <code>resx</code> files allows defining language and culture specific strings and resources, while having english fallbacks when they aren't present.
+<strong>NOTE:</strong> Only the default <code>Resources.resx</code> file is committed into source control.  All other translations are downloaded from transifex at the time of compilation (more information on this below).
+These <code>resx</code> files allows defining language and culture specific strings and resources, while having English fallbacks when they aren't present.
 This allows Chocolatey GUI to, in general, be localization neutral.
-For more information about localizaton using <code>resx</code> check the CultureInfo section on <a href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.110).aspx">MSDN</a>.</p>
+For more information about localization using <code>resx</code> check the CultureInfo section on <a href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.110).aspx">MSDN</a>.</p>
 <p>The most important thing to remember is: each language has it's own <code>Resources.&lt;lang&gt;.resx</code>, where <code>&lt;lang&gt;</code> is referring to the language culture name (as an example <code>de</code> for German or <code>nl</code> for Dutch).
 A list of available cultures and their corresponding codes tags can be found <a href="https://msdn.microsoft.com/en-us/library/cc233982.aspx">here</a>.
 If no fitting <code>&lt;lang&gt;</code> is present for the current system, the default/fallback <code>Resources.resx</code> - containing the English language will be chosen.</p>
-<h2 id="adding-a-new-language">Adding A New Language</h2>
-<ol>
-<li>Make sure you're up-to-date with ChocolateyGUI/develop</li>
-<li>Create a fork of Chocolatey GUI and a new branch named <code>localization/&lt;lang&gt;</code></li>
-<li>In VisualStudio: create a copy of <code>Resources.resx</code> in the Properties folder and rename it to <code>Resources.&lt;lang&gt;.resx</code></li>
-<li>Use the resource-editor to change the name-value pairs of the new file</li>
-</ol>
-<h3 id="testing-other-languages">Testing Other Languages</h3>
+<p>When a new release of Chocolatey GUI is created, the resx files at the time of compilation are embedded within the generated assembly.
+As a result, any modifications/additions to any files will not be available until the next release of Chocolatey GUI.
+<strong>NOTE:</strong> It is possible, assuming you have a transifex token, to download the resx files locally onto your environment. and compile Chocolatey GUI, will would allow you to test any changes locally.  More information on this below.</p>
+<h2 id="transifex">transifex</h2>
+<p>The Chocolatey GUI project makes use of the localization platform known as <a href="https://www.transifex.com/">transifex</a>.
+<strong>NOTE:</strong> This is normally a paid for service, however, we are using the Open Source offering that they provide.</p>
+<h3 id="helping-with-translations">Helping with translations</h3>
+<p>In order to help with the localization effort for Chocolatey GUI, you will need to create an account on <a href="https://www.transifex.com/">transifex</a>.
+Once you have an account, you will be able to request to join the <a href="https://www.transifex.com/chocolatey/chocolatey-gui/dashboard/">Chocolatey GUI</a> project in transifex.
+<strong>NOTE:</strong> This request will need to be approved.
+If a request goes unapproved for a period of time, reach out on the Chocolatey GUI <a href="https://gitter.im/chocolatey/ChocolateyGUI">Gitter</a> room for help.</p>
+<h3 id="adding-a-new-language">Adding a new language</h3>
+<p>If a language hasn't yet been created for the Chocolatey GUI project that you would like to help with, you will need to make a request to have it added.
+This can be done via the <a href="https://www.transifex.com/chocolatey/chocolatey-gui/dashboard/">Chocolatey GUI dashboard</a>.
+<strong>NOTE:</strong> Adding a new language to the project will require approval.
+If a request goes unapproved for a period of time, reach out on the Chocolatey GUI <a href="https://gitter.im/chocolatey/ChocolateyGUI">Gitter</a> room for help.</p>
+<h2 id="testing-other-languages">Testing Other Languages</h2>
+<h3 id="download-transifex-files">Download transifex files</h3>
+<p>In order to test other languages within Chocolatey GUI, prior to a release, you will need to do the following:</p>
+<ul>
+<li>Open an Administrative PowerShell Window</li>
+<li>Navigate to the folder where you have cloned the Chocolatey GUI repository</li>
+<li>Run the following command:
+<ul>
+<li><code>.\build.ps1 --target=&quot;Transifex-Pull-Translations&quot;</code></li>
+</ul>
+</li>
+<li>You will be asked whether you have a transifex token
+<ul>
+<li>If so, answer yes, and enter it</li>
+<li>If not, answer no, and you will be prompted for your transifex username/password</li>
+</ul>
+</li>
+<li>Once all information is provided, hit enter</li>
+<li>ALl current resx files should be downloaded into the <code>Source\ChocolateyGui\Properties</code> folder</li>
+<li>Build the application by running the command:
+<ul>
+<li><code>.\build.ps1</code></li>
+</ul>
+</li>
+<li>Assuming that completes successfully, you should be able to install the generated MSI, which will contain the most recent translations available</li>
+</ul>
+<h3 id="reset-transifex-authentication">Reset transifex authentication</h3>
+<p>If for some reason you need to reset the authentication used by transifex, you will need to delete the persisted information.
+This can be found in the root of your Users folder, in a file called <code>.transifexrc</code>.
+Simply delete this file.
+If you do this, you will need to run the <code>Transifex-Pull-Translations</code> task again, in order to provide the required information.</p>
+<h3 id="temporary-code-change">Temporary code change</h3>
 <p>When testing another language (that does not match the current system locale), a little code-snippet has to be added.
-Add the following to your App.xaml.cs (right before <code>application.Run();</code>)</p>
+Add the following to your App.xaml.cs (located at <code>Source/ChocolateyGui/App.xaml.cs</code>) (right before <code>application.Run();</code>)</p>
 <ul>
 <li><strong>Don't forget</strong> to remove this line of code after you're done testing!</li>
 </ul>
 <pre><code class="language-cs">System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(&quot;&lt;lang&gt;&quot;);
 application.Run();
 </code></pre>
+<p><strong>NOTE:</strong> If you are unsure what you should replace <code>&lt;lang&gt;</code> with, refer to <a href="https://msdn.microsoft.com/en-us/library/cc233982.aspx">here</a></p>
+<p><strong>NOTE:</strong> There is an <a href="https://github.com/chocolatey/ChocolateyGUI/issues/533">open issue</a> that would allow runtime modification of the current locale, but this hasn't been implemented yet.
+Once this has been implemented, this code change will no longer be required.</p>
 <h2 id="adding-new-strings-to-chocolatey-gui">Adding New Strings To Chocolatey GUI</h2>
 <p>The following rules of thumb apply for adding entirely new strings to Chocolatey GUI:</p>
 <ul>
 <li>Always use static bindings (lang:Resources.xyz)</li>
 <li>Use context-sensitive names (<code>PageOrControlName_StringUsageHintOrName</code>)</li>
-<li>Always add the new String to <code>Resources.resx</code> (English) first</li>
-<li>Be nice, also translate all other languages that you know - immediately after adding a new string</li>
-<li>Open up issues for missing translations</li>
+<li>Always add the new String to <code>Resources.resx</code> (English)</li>
+<li>Only changes to this one file should be committed into source control</li>
+<li>Once your changes have been merged into the develop branch, the resx file will be uploaded to Transifex, which will then make the strings available for translation into other languages</li>
 </ul>
 
 	</section>

@@ -139,15 +139,15 @@
 			<li class="header">Namespace</li>
 		<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services">ChocolateyGui<wbr>.Services</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Class Types</li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/ConfigService">ConfigService</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/PersistenceService">PersistenceService</a></li>
-				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/ProgressService">ProgressService</a></li>
 			<li class="header">Interface Types</li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IChocolateyService">IChocolateyService</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IConfigService">IConfigService</a></li>
 				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IPersistenceService">IPersistenceService</a></li>
 				<li class="selected"><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IProgressService">IProgressService</a></li>
+			<li class="header">Class Types</li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/ConfigService">ConfigService</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/PersistenceService">PersistenceService</a></li>
+				<li><a href="/ChocolateyGUI/api/ChocolateyGui.Services/ProgressService">ProgressService</a></li>
 
 
                     </ul>
@@ -181,7 +181,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li>I<wbr>Notify<wbr>Property<wbr>Changed</li>								
-											<li>IProgress<wbr>&lt;T&gt;<wbr></li>								
+											<li>IProgress<wbr>&lt;double&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -199,7 +199,7 @@
 						<div class="mermaid">
 							graph TD
 	Interface0["INotifyPropertyChanged"]-.-&gt;Type
-	Interface1["IProgress&lt;T&gt;"]-.-&gt;Type
+	Interface1["IProgress&lt;double&gt;"]-.-&gt;Type
 	Type["IProgressService"]
 class Type type-node
 	Type-.-&gt;Implementing0["ProgressService"]
@@ -213,6 +213,7 @@ class Type type-node
 
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public interface IProgressService : INotifyPropertyChanged, IProgress&lt;double&gt;</code></pre>
+
 
 
 
@@ -242,7 +243,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IProgressService/D9A9584A">Output</a></td>
-								<td><a href="/ChocolateyGUI/api/ChocolateyGui.Controls/ObservableRingBufferCollection_1">Observable<wbr>Ring<wbr>Buffer<wbr>Collection<wbr>&lt;T&gt;<wbr></a></td>
+								<td><a href="/ChocolateyGUI/api/ChocolateyGui.Controls/ObservableRingBufferCollection_1">Observable<wbr>Ring<wbr>Buffer<wbr>Collection</a><wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models/PowerShellOutputLine">PowerShellOutputLine</a>&gt;<wbr></td>
 								<td>
 									<div></div>
 								</td>
@@ -272,7 +273,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.Services/IProgressService/C61347DF">ShowMessageAsync<wbr>(string, <wbr>string)<wbr></a></td>
-								<td>Task<wbr>&lt;TResult&gt;<wbr></td>
+								<td>Task<wbr>&lt;MessageDialogResult&gt;<wbr></td>
 								<td>
 									<div></div>
 								</td>

@@ -182,7 +182,12 @@
 								<dt>Interfaces</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li>IHandle<wbr>&lt;&gt;<wbr></li>								
+											<li>IHandle<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/ShowPackageDetailsMessage">Show<wbr>Package<wbr>Details<wbr>Message</a>&gt;<wbr></li>								
+											<li>IHandle<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/ShowSourcesMessage">ShowSourcesMessage</a>&gt;<wbr></li>								
+											<li>IHandle<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/ShowSettingsMessage">ShowSettingsMessage</a>&gt;<wbr></li>								
+											<li>IHandle<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/ShowAboutMessage">ShowAboutMessage</a>&gt;<wbr></li>								
+											<li>IHandle<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/SettingsGoBackMessage">Settings<wbr>Go<wbr>Back<wbr>Message</a>&gt;<wbr></li>								
+											<li>IHandle<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.Models.Messages/AboutGoBackMessage">AboutGoBackMessage</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -200,7 +205,12 @@
 						<div class="mermaid">
 							graph TD
 	Base0["Conductor&lt;object&gt;.Collection.OneActive"]--&gt;Type
-	Interface0["IHandle&lt;&gt;"]-.-&gt;Type
+	Interface0["IHandle&lt;ShowPackageDetailsMessage&gt;"]-.-&gt;Type
+	Interface1["IHandle&lt;ShowSourcesMessage&gt;"]-.-&gt;Type
+	Interface2["IHandle&lt;ShowSettingsMessage&gt;"]-.-&gt;Type
+	Interface3["IHandle&lt;ShowAboutMessage&gt;"]-.-&gt;Type
+	Interface4["IHandle&lt;SettingsGoBackMessage&gt;"]-.-&gt;Type
+	Interface5["IHandle&lt;AboutGoBackMessage&gt;"]-.-&gt;Type
 	Type["ShellViewModel"]
 class Type type-node
 
@@ -214,6 +224,7 @@ class Type type-node
 	<pre><code>public class ShellViewModel : Conductor&lt;object&gt;.Collection.OneActive, 
     IHandle&lt;ShowPackageDetailsMessage&gt;, IHandle&lt;ShowSourcesMessage&gt;, IHandle&lt;ShowSettingsMessage&gt;, 
     IHandle&lt;ShowAboutMessage&gt;, IHandle&lt;SettingsGoBackMessage&gt;, IHandle&lt;AboutGoBackMessage&gt;</code></pre>
+
 
 
 
@@ -275,7 +286,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels/ShellViewModel/9A2F5FBD">Sources</a></td>
-								<td>BindableCollection<wbr>&lt;&gt;<wbr></td>
+								<td>BindableCollection<wbr>&lt;<a href="/ChocolateyGUI/api/ChocolateyGui.ViewModels.Items/SourceViewModel">SourceViewModel</a>&gt;<wbr></td>
 								<td>
 									<div></div>
 								</td>
